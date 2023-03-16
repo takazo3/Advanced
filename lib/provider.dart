@@ -17,6 +17,7 @@ class TasksNotifier extends StateNotifier<List<Task>> {
   void addTask(Task newTask) {
     state = [newTask, ...state];
   }
+  
 
   void deleteTask(int index) {
     state = List.from(state)..removeAt(index);

@@ -53,8 +53,8 @@ class EditDialog extends ConsumerWidget {
         })(),
         content: TextField(
           keyboardType: TextInputType.text,
-          controller: TextEditingController(),
-          decoration: InputDecoration(hintText: 'Add task'),
+          controller: textEditingController,
+          // decoration: InputDecoration(hintText: 'Add task'),
           enabled: true,
           maxLength: 25,
           maxLengthEnforcement: MaxLengthEnforcement.enforced,
